@@ -1,0 +1,39 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--figma-color-bg);
+  color: var(--figma-color-text);
+  overflow: hidden;
+}
+
+body {
+  display: flex; /* Establish flexbox layout for body */
+  flex-direction: column; /* Stack main and footer vertically */
+  min-height: 100vh; /* Ensure body fills viewport height */
+  margin: 0; /* Remove default margins */
+}
+
+main {
+  flex: 1; /* Allow main content to expand and fill remaining space */
+  overflow: hidden;
+  padding: 0;
+}
+
+footer {
+  bottom: 0;
+  width: 100%; /* Ensure footer spans the entire width */
+  border-top: 1px solid #ccc; /* Set a top border with gray color */
+  text-align: center; /* Center align text within the footer */
+  padding: 10px; /* Add top and bottom padding for spacing */
+}
+
+a {
+  text-decoration: none;
+  color: var(--figma-color-text-brand);
+}
+
+a:hover {
+  text-decoration: underline;
+}
